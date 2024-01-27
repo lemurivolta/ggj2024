@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca6jfukwp7m1p"
-path="res://.godot/imported/mostro bocca aperta.png-b2383a81173fcab33b8678aa1d6e0a55.ctex"
+uid="uid://d0r3c2oflf1cu"
+path="res://.godot/imported/TESTA Mostro 2 BOCCA APERTA.png-ec43fc28321baa9dcdb8bd02d822be84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/2D/mostro bocca aperta.png"
-dest_files=["res://.godot/imported/mostro bocca aperta.png-b2383a81173fcab33b8678aa1d6e0a55.ctex"]
+source_file="res://Assets/2D/teste/TESTA Mostro 2 BOCCA APERTA.png"
+dest_files=["res://.godot/imported/TESTA Mostro 2 BOCCA APERTA.png-ec43fc28321baa9dcdb8bd02d822be84.ctex"]
 
 [params]
 

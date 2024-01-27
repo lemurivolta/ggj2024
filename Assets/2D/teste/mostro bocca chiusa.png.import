@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bds0ea761qli8"
-path="res://.godot/imported/mostro tronco.png-a0e89414b6f4f961648a6dff351634ba.ctex"
+uid="uid://c76x8swdag62f"
+path="res://.godot/imported/mostro bocca chiusa.png-cb426a38ea81ff6245780b30ddac0a2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/2D/mostro tronco.png"
-dest_files=["res://.godot/imported/mostro tronco.png-a0e89414b6f4f961648a6dff351634ba.ctex"]
+source_file="res://Assets/2D/teste/mostro bocca chiusa.png"
+dest_files=["res://.godot/imported/mostro bocca chiusa.png-cb426a38ea81ff6245780b30ddac0a2f.ctex"]
 
 [params]
 
