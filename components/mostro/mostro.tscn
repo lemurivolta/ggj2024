@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://suf8d5ylak8q"]
+[gd_scene load_steps=12 format=3 uid="uid://suf8d5ylak8q"]
 
 [ext_resource type="Script" path="res://components/mostro/mostro.gd" id="1_hcscu"]
 [ext_resource type="PackedScene" uid="uid://damxljj8qvw7a" path="res://components/mostro/parte_mostro/parte_mostro.tscn" id="2_mc838"]
+[ext_resource type="PackedScene" uid="uid://bma5f5v54d0gs" path="res://components/mostro_sprite/monster_sprite.tscn" id="3_frbmn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c0inf"]
 resource_local_to_scene = true
@@ -88,6 +89,8 @@ shape = SubResource("RectangleShape2D_6xvef")
 [node name="CollisionShape2D" parent="parte_mostro_top_right" index="0"]
 position = Vector2(903, 322)
 shape = SubResource("RectangleShape2D_jnw26")
+
+[node name="monster_sprite" parent="." instance=ExtResource("3_frbmn")]
 
 [editable path="parte_mostro_bottom_left"]
 [editable path="parte_mostro_bottom_right"]
