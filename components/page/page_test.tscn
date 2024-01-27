@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://t87obbwwlt4l"]
+
+[ext_resource type="Script" path="res://components/page/page_test.gd" id="1_g03bv"]
+[ext_resource type="PackedScene" uid="uid://cx3uygqus5c46" path="res://components/page/page.tscn" id="1_muh6u"]
+
+[node name="PageTest" type="Node2D"]
+script = ExtResource("1_g03bv")
+
+[node name="Page3" parent="." instance=ExtResource("1_muh6u")]
+unique_name_in_owner = true
+position = Vector2(-33, 109)
+scale = Vector2(0.885, 0.885)
+
+[node name="Page2" parent="." instance=ExtResource("1_muh6u")]
+unique_name_in_owner = true
+position = Vector2(-33, 109)
+scale = Vector2(0.885, 0.885)
+
+[node name="Page1" parent="." instance=ExtResource("1_muh6u")]
+unique_name_in_owner = true
+position = Vector2(-33, 109)
+scale = Vector2(0.885, 0.885)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlipAway1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Flip Away 1"
+
+[node name="FlipAway2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Flip Away 2"
+
+[node name="FlipAway3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Flip Away 3"
+
+[connection signal="pressed" from="VBoxContainer/FlipAway1" to="." method="_on_flip_away_pressed"]
+[connection signal="pressed" from="VBoxContainer/FlipAway2" to="." method="_on_flip_away2_pressed"]
+[connection signal="pressed" from="VBoxContainer/FlipAway3" to="." method="_on_flip_away3_pressed"]
