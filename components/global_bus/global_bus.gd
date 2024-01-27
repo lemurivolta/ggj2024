@@ -30,6 +30,10 @@ signal happy
 # Signal raised when the monster name is chosen
 signal set_name(part1: String, part2: String, part3: String)
 
+# Signal to warn about the start of the interaction (started = true) or the end
+# of it (started = false)
+signal interaction(started: bool)
+
 ###############################################################################
 # FUNCTIONS
 ###############################################################################
