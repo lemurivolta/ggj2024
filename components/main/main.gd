@@ -17,6 +17,7 @@ func add_page():
 	page.add_child(monster)
 	add_child(page)
 	curr_page = page
+	move_child(curr_page, 0)
 
 
 func _on_happy():
@@ -24,4 +25,3 @@ func _on_happy():
 	var prev_page = curr_page
 	add_page()
 	prev_page.flip_away()
-	move_child(curr_page, 0)

@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://ukxpe0jhtey7"]
+[gd_scene load_steps=5 format=3 uid="uid://ukxpe0jhtey7"]
 
 [ext_resource type="Script" path="res://components/main/main.gd" id="1_uvngm"]
 [ext_resource type="PackedScene" uid="uid://cx3uygqus5c46" path="res://components/page/page.tscn" id="2_buj4y"]
 [ext_resource type="PackedScene" uid="uid://suf8d5ylak8q" path="res://components/mostro/mostro.tscn" id="3_72gnt"]
+[ext_resource type="PackedScene" uid="uid://b65s2f6rnfxt1" path="res://components/laugh_or_grr/laugh_or_grr.tscn" id="4_6c7y2"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_uvngm")
 page_scene = ExtResource("2_buj4y")
 monster_scene = ExtResource("3_72gnt")
+
+[node name="LaughOrGrr" parent="." instance=ExtResource("4_6c7y2")]
