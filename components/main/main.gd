@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 @export var page_scene: PackedScene
 @export var monster_scene: PackedScene
@@ -21,7 +21,6 @@ func add_page():
 
 
 func _on_happy():
-	print("next page!")
 	var prev_page = curr_page
 	add_page()
 	prev_page.flip_away()

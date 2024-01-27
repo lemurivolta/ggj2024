@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b65s2f6rnfxt1" path="res://components/laugh_or_grr/laugh_or_grr.tscn" id="4_6c7y2"]
 [ext_resource type="PackedScene" uid="uid://b35oppkvtavcf" path="res://components/audio_feedback/audio_feedback.tscn" id="6_72d7u"]
 
-[node name="main" type="Node"]
+[node name="main" type="Node2D"]
 script = ExtResource("1_uvngm")
 page_scene = ExtResource("2_buj4y")
 monster_scene = ExtResource("3_72gnt")
