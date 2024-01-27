@@ -12,6 +12,7 @@ config_version=5
 
 config/name="Necrocomicon"
 config/description="Enter an interesting project description here!"
+run/main_scene="res://components/main/main.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
