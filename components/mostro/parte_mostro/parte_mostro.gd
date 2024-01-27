@@ -1,22 +1,41 @@
 extends Area2D
 
+@export var mouse_min_velocity : Vector2 = Vector2(200,200)
 
-# Called when the node enters the scene tree for the first time.
+var pleasure : float
+
+var is_mouse_clicked : bool
+
+var my_delta : float
+
+var rnd = RandomNumberGenerator.new()
+
 func _ready():
-	pass # Replace with function body.
+	if rnd.randf_range(0, 1) > 0.3:
+		pleasure = -1
+	else:
+		pleasure = 1
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _physics_process(delta):
+	if Input.is_action_pressed("click"):
+		is_mouse_clicked = true
+	else:
+		is_mouse_clicked = false
+	my_delta = delta
+
 
 func _on_input_event(viewport, event, shape_idx):
-	# Mouse in viewport coordinates.
-	if event is InputEventMouseButton:
-		print("Mouse Click/Unclick at: ", event.position)
-	elif event is InputEventMouseMotion:
-		print("Mouse Motion at: ", event.position)
 
-	# Print the size of the viewport.
-	# print("Viewport Resolution is: ", get_viewport().get_visible_rect().size)
+	if is_mouse_clicked && event is InputEventMouseMotion:
+		
+		var mouse_vel = event.velocity.length()
 
+		var mouse_threshold = mouse_min_velocity.length()
+
+		#print(str(mouse_vel) + " | " + str(mouse_threshold))
+
+		if mouse_vel >= mouse_threshold:
+			print("AHAHA " + str(rnd.randf_range(-10.0, 10.0)))
+		
+		GlobalBus.tickle.emit(pleasure * my_delta)
