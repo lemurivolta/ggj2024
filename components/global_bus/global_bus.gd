@@ -38,6 +38,8 @@ signal interaction(started: bool)
 # FUNCTIONS
 ###############################################################################
 
+var tickle_enabled = true
+
 # Reset the pleasure level to 0
 func reset_pleasure():
 	current_pleasure = 0
@@ -50,6 +52,8 @@ func _ready():
 	tickle.connect(_on_tickle)
 	
 func _on_tickle(value: float):
+	if not tickle_enabled:
+		return
 	current_pleasure = \
 		clamp(current_pleasure + value, enraged_threshold, happy_threshold)
 	if current_pleasure <= enraged_threshold:
