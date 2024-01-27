@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://suf8d5ylak8q"]
+[gd_scene load_steps=2 format=3 uid="uid://suf8d5ylak8q"]
+
+[ext_resource type="Script" path="res://components/mostro/mostro.gd" id="1_hcscu"]
 
 [node name="Mostro" type="Node2D"]
+script = ExtResource("1_hcscu")
