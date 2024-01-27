@@ -43,8 +43,11 @@ func _ready():
 	tickle.connect(_on_tickle)
 	
 func _on_tickle(value: float):
-	current_pleasure = clamp(current_pleasure + value, enraged_threshold, happy_threshold)
+	current_pleasure = \
+		clamp(current_pleasure + value, enraged_threshold, happy_threshold)
 	if current_pleasure <= enraged_threshold:
+		current_pleasure = 0
 		enraged.emit()
 	elif current_pleasure >= happy_threshold:
+		current_pleasure = 0
 		happy.emit()
