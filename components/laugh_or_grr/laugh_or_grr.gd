@@ -11,6 +11,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	GlobalBus.tickle.connect(_on_tickle)
+	GlobalBus.feedback.connect(_on_feedback)
 
 func _on_tickle(_pleasure):
 	_update_sprites(GlobalBus.happy_threshold, 0, GlobalBus.happy_threshold, sprites_happy)
@@ -30,10 +31,15 @@ func _update_sprites(threshold: float, min_value: float, max_value: float, sprit
 
 func _on_particles_timer_timeout():
 	if GlobalBus.current_pleasure > 0 && not happy_particles.emitting:
+		GlobalBus.feedback.emit(true)
+	if GlobalBus.current_pleasure < 0 && not enraged_particles.emitting:
+		GlobalBus.feedback.emit(false)
+
+
+func _on_feedback(positive: bool):
+	if positive:
 		happy_particles.restart()
 		happy_particles.emitting = true
-	if GlobalBus.current_pleasure < 0 && not enraged_particles.emitting:
+	else:
 		enraged_particles.restart()
 		enraged_particles.emitting = true
-
-

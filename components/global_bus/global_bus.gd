@@ -21,6 +21,9 @@ var happy_threshold = 5
 # bad place (negative)
 signal tickle(pleasure: float)
 
+# It's the moment to give a feedback
+signal feedback(positive: bool)
+
 # Signal raised when the monster is too displeased and gets enraged (gameover)
 signal enraged
 

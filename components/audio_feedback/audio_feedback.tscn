@@ -1,0 +1,40 @@
+[gd_scene load_steps=9 format=3 uid="uid://b35oppkvtavcf"]
+
+[ext_resource type="Script" path="res://components/audio_feedback/audio_feedback.gd" id="1_85hah"]
+[ext_resource type="AudioStream" uid="uid://cqfop7jq5cx0y" path="res://Assets/SFX/laughters/evil-demonic-laugh-6925.mp3" id="1_o3vlc"]
+[ext_resource type="AudioStream" uid="uid://hs6kg1sciq3i" path="res://Assets/SFX/laughters/laughing-ghost-horror-sounds-8293.mp3" id="2_rqmtr"]
+[ext_resource type="AudioStream" uid="uid://chcyghddowy6e" path="res://Assets/SFX/laughters/monster-laugh-103278.mp3" id="3_tcfy6"]
+[ext_resource type="AudioStream" uid="uid://3fgiwndwjn74" path="res://Assets/SFX/growls/dragon-growl-37570.mp3" id="4_rigsn"]
+[ext_resource type="AudioStream" uid="uid://cf2ajw4j11gyv" path="res://Assets/SFX/growls/growl-96998.mp3" id="5_fs1qj"]
+[ext_resource type="AudioStream" uid="uid://ewow402475p" path="res://Assets/SFX/growls/monster-roar-6985.mp3" id="6_34etu"]
+[ext_resource type="AudioStream" uid="uid://dhg3e52hquc8w" path="res://Assets/SFX/growls/zombie-growl-3-6863.mp3" id="7_4c5nt"]
+
+[node name="AudioFeedback" type="Node"]
+script = ExtResource("1_85hah")
+
+[node name="LaughterPlayers" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="LaughterPlayers"]
+stream = ExtResource("1_o3vlc")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="LaughterPlayers"]
+stream = ExtResource("2_rqmtr")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="LaughterPlayers"]
+stream = ExtResource("3_tcfy6")
+
+[node name="GrowlPlayers" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GrowlPlayers"]
+stream = ExtResource("4_rigsn")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="GrowlPlayers"]
+stream = ExtResource("5_fs1qj")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="GrowlPlayers"]
+stream = ExtResource("6_34etu")
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="GrowlPlayers"]
+stream = ExtResource("7_4c5nt")
