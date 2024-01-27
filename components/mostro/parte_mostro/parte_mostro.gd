@@ -11,7 +11,7 @@ var my_delta : float
 var rnd = RandomNumberGenerator.new()
 
 var pleasurometer : float
-var max_pleasure : float
+@export var max_pleasure : float = 100
 
 func _ready():
 	if rnd.randf_range(0, 1) > 0.3:
@@ -42,7 +42,7 @@ func _on_input_event(viewport, event, shape_idx):
 		#print(str(mouse_vel) + " | " + str(mouse_threshold))
 
 		if mouse_vel >= mouse_threshold:
-			print("AHAHA " + str(rnd.randf_range(-10.0, 10.0)))
+			print("AHAHA " + name)#+ str(rnd.randf_range(-10.0, 10.0)))
 		
 		GlobalBus.tickle.emit(pleasure * my_delta)
 		pleasurometer += pleasure * my_delta
