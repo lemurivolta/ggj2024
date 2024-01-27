@@ -16,6 +16,10 @@ run/main_scene="res://components/main/main.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalBus="*res://components/global_bus/global_bus.gd"
+
 [display]
 
 window/size/viewport_width=1080
