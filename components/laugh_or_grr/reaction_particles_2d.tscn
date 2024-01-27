@@ -18,6 +18,8 @@ spread = 180.0
 initial_velocity_min = 385.09
 initial_velocity_max = 385.09
 gravity = Vector3(0, 98, 0)
+scale_min = 0.05
+scale_max = 0.05
 alpha_curve = SubResource("CurveTexture_s6xxt")
 
 [node name="ReactionParticles2D" type="GPUParticles2D"]
