@@ -1,18 +1,24 @@
-[gd_scene load_steps=8 format=3 uid="uid://bma5f5v54d0gs"]
+[gd_scene load_steps=10 format=3 uid="uid://bma5f5v54d0gs"]
 
 [ext_resource type="Script" path="res://components/mostro_sprite/monster_sprite.gd" id="1_j2tp6"]
 [ext_resource type="Texture2D" uid="uid://c76x8swdag62f" path="res://Assets/2D/teste/mostro bocca chiusa.png" id="2_0afpf"]
 [ext_resource type="Texture2D" uid="uid://bkhf7r4bijaph" path="res://Assets/2D/teste/TESTA 2 BOCCA CHIUSA.png" id="3_51f7o"]
-[ext_resource type="Texture2D" uid="uid://d1nxehapbpw04" path="res://Assets/2D/tronchi/geri.png" id="3_w8ck5"]
+[ext_resource type="Texture2D" path="res://Assets/2D/tronchi/geri.png" id="4_jpxfw"]
 [ext_resource type="Texture2D" uid="uid://88y8hl0fqdg" path="res://Assets/2D/gambe/MOSTRO GAMBE 2.png" id="4_llohd"]
-[ext_resource type="Texture2D" uid="uid://b373pe63j6ifx" path="res://Assets/2D/tronchi/za.png" id="5_qyugd"]
+[ext_resource type="Texture2D" uid="uid://d0r3c2oflf1cu" path="res://Assets/2D/teste/TESTA Mostro 2 BOCCA APERTA.png" id="5_4tgg2"]
+[ext_resource type="Texture2D" path="res://Assets/2D/tronchi/za.png" id="5_qyugd"]
 [ext_resource type="Texture2D" uid="uid://bv8h8lytbghko" path="res://Assets/2D/gambe/mostro gambe.png" id="7_hrm8v"]
+[ext_resource type="Texture2D" uid="uid://ca6jfukwp7m1p" path="res://Assets/2D/teste/mostro bocca aperta.png" id="8_hv0u0"]
 
 [node name="monster_sprite" type="Node2D"]
 script = ExtResource("1_j2tp6")
 sprites_head = Array[Texture]([ExtResource("2_0afpf"), ExtResource("3_51f7o")])
-sprites_body = Array[Texture]([ExtResource("3_w8ck5"), ExtResource("5_qyugd")])
+sprites_head_open = Array[Texture]([ExtResource("8_hv0u0"), ExtResource("5_4tgg2")])
+sprites_body = Array[Texture]([ExtResource("4_jpxfw"), ExtResource("5_qyugd")])
 sprites_legs = Array[Texture]([ExtResource("4_llohd"), ExtResource("7_hrm8v")])
+names_head = Array[String](["Asmo", "Uro"])
+names_body = Array[String](["za", "geri"])
+names_legs = Array[String](["el", "oth"])
 
 [node name="head" type="Sprite2D" parent="."]
 position = Vector2(540, 960)
