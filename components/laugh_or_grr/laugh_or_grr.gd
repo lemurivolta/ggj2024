@@ -19,8 +19,8 @@ func _on_tickle(_pleasure):
 	_on_particles_timer_timeout()
 		#particles_timer.start()
 
-func _update_sprites(threshold: float, min: float, max: float, sprites: Array[Sprite2D]):
-	var level = clamp(GlobalBus.current_pleasure, min, max)
+func _update_sprites(threshold: float, min_value: float, max_value: float, sprites: Array[Sprite2D]):
+	var level = clamp(GlobalBus.current_pleasure, min_value, max_value)
 	var num_enabled = ceil(level / threshold * sprites.size())
 	for i in sprites.size():
 		sprites[i].visible = i < num_enabled
