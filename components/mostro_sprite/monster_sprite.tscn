@@ -1,0 +1,24 @@
+[gd_scene load_steps=8 format=3 uid="uid://bma5f5v54d0gs"]
+
+[ext_resource type="Script" path="res://components/mostro_sprite/monster_sprite.gd" id="1_j2tp6"]
+[ext_resource type="Texture2D" uid="uid://c76x8swdag62f" path="res://Assets/2D/teste/mostro bocca chiusa.png" id="2_0afpf"]
+[ext_resource type="Texture2D" uid="uid://bkhf7r4bijaph" path="res://Assets/2D/teste/TESTA 2 BOCCA CHIUSA.png" id="3_51f7o"]
+[ext_resource type="Texture2D" uid="uid://d1nxehapbpw04" path="res://Assets/2D/tronchi/CORPO2.png" id="3_w8ck5"]
+[ext_resource type="Texture2D" uid="uid://88y8hl0fqdg" path="res://Assets/2D/gambe/MOSTRO GAMBE 2.png" id="4_llohd"]
+[ext_resource type="Texture2D" uid="uid://b373pe63j6ifx" path="res://Assets/2D/tronchi/mostro tronco.png" id="5_8p8p3"]
+[ext_resource type="Texture2D" uid="uid://bv8h8lytbghko" path="res://Assets/2D/gambe/mostro gambe.png" id="7_hrm8v"]
+
+[node name="monster_sprite" type="Node2D"]
+script = ExtResource("1_j2tp6")
+sprites_head = Array[Texture]([ExtResource("2_0afpf"), ExtResource("3_51f7o")])
+sprites_body = Array[Texture]([ExtResource("3_w8ck5"), ExtResource("5_8p8p3")])
+sprites_legs = Array[Texture]([ExtResource("4_llohd"), ExtResource("7_hrm8v")])
+
+[node name="head" type="Sprite2D" parent="."]
+position = Vector2(540, 960)
+
+[node name="body" type="Sprite2D" parent="."]
+position = Vector2(540, 960)
+
+[node name="legs" type="Sprite2D" parent="."]
+position = Vector2(540, 960)
