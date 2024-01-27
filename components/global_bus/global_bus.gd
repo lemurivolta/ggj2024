@@ -11,7 +11,7 @@ var current_pleasure: float = 0
 var enraged_threshold = -5
 
 # Level of pleasure over which the monster is really happy and gets quiet
-var happy_threshold = 5
+var happy_threshold = 2
 
 ###############################################################################
 # SIGNALS
