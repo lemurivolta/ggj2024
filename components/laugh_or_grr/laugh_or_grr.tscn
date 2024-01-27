@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b65s2f6rnfxt1"]
+[gd_scene load_steps=5 format=3 uid="uid://b65s2f6rnfxt1"]
 
-[ext_resource type="Texture2D" uid="uid://cnssbm8x5rjsb" path="res://icon.png" id="1_5ohxh"]
 [ext_resource type="Script" path="res://components/laugh_or_grr/laugh_or_grr.gd" id="1_wi7hq"]
+[ext_resource type="Texture2D" uid="uid://bfdvg43dlndn6" path="res://Assets/2D/RISATA (2).png" id="2_6nq1o"]
+[ext_resource type="Texture2D" uid="uid://bmbvy1rruwx2v" path="res://Assets/2D/RABBIA (1).png" id="3_jr81g"]
 [ext_resource type="PackedScene" uid="uid://d3nojpv4x7v1p" path="res://components/laugh_or_grr/reaction_particles_2d.tscn" id="3_y3p8s"]
 
 [node name="LaughOrGrr" type="Node2D" node_paths=PackedStringArray("sprites_happy", "sprites_enraged")]
@@ -16,37 +17,44 @@ scale = Vector2(0.7, 0.7)
 [node name="Sprite2D" type="Sprite2D" parent="HappyLevel1"]
 visible = false
 position = Vector2(410, 305)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D2" type="Sprite2D" parent="HappyLevel1"]
 visible = false
 position = Vector2(698, 245)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D3" type="Sprite2D" parent="HappyLevel1"]
 visible = false
 position = Vector2(892, 463)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D4" type="Sprite2D" parent="HappyLevel1"]
 visible = false
 position = Vector2(292, 491)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D5" type="Sprite2D" parent="HappyLevel1"]
 visible = false
 position = Vector2(776, 703)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D6" type="Sprite2D" parent="HappyLevel1"]
 visible = false
 position = Vector2(468, 747)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D7" type="Sprite2D" parent="HappyLevel1"]
 visible = false
 position = Vector2(448, 595)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="HappyLevel2" type="Node2D" parent="."]
 position = Vector2(-92, -56)
@@ -55,37 +63,44 @@ scale = Vector2(1.1, 1.1)
 [node name="Sprite2D" type="Sprite2D" parent="HappyLevel2"]
 visible = false
 position = Vector2(410, 305)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D2" type="Sprite2D" parent="HappyLevel2"]
 visible = false
 position = Vector2(698, 245)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D3" type="Sprite2D" parent="HappyLevel2"]
 visible = false
 position = Vector2(892, 463)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D4" type="Sprite2D" parent="HappyLevel2"]
 visible = false
 position = Vector2(292, 491)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D5" type="Sprite2D" parent="HappyLevel2"]
 visible = false
 position = Vector2(776, 703)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D6" type="Sprite2D" parent="HappyLevel2"]
 visible = false
 position = Vector2(468, 747)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D7" type="Sprite2D" parent="HappyLevel2"]
 visible = false
 position = Vector2(448, 595)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="HappyLevel3" type="Node2D" parent="."]
 position = Vector2(-92, -56)
@@ -94,37 +109,44 @@ scale = Vector2(1.1, 1.1)
 [node name="Sprite2D" type="Sprite2D" parent="HappyLevel3"]
 visible = false
 position = Vector2(199.091, 192.727)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D2" type="Sprite2D" parent="HappyLevel3"]
 visible = false
 position = Vector2(938.182, 289.091)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D3" type="Sprite2D" parent="HappyLevel3"]
 visible = false
 position = Vector2(502.727, 135.455)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D4" type="Sprite2D" parent="HappyLevel3"]
 visible = false
 position = Vector2(270, 690.909)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D5" type="Sprite2D" parent="HappyLevel3"]
 visible = false
 position = Vector2(936.364, 648.182)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D6" type="Sprite2D" parent="HappyLevel3"]
 visible = false
 position = Vector2(199.091, 354.545)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="Sprite2D7" type="Sprite2D" parent="HappyLevel3"]
 visible = false
 position = Vector2(644.545, 810)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6nq1o")
 
 [node name="EnragedLevel1" type="Node2D" parent="."]
 position = Vector2(184, 140)
@@ -132,45 +154,45 @@ scale = Vector2(0.7, 0.7)
 
 [node name="Sprite2D" type="Sprite2D" parent="EnragedLevel1"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(410, 305)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D2" type="Sprite2D" parent="EnragedLevel1"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(698, 245)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D3" type="Sprite2D" parent="EnragedLevel1"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(892, 463)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D4" type="Sprite2D" parent="EnragedLevel1"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(292, 491)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D5" type="Sprite2D" parent="EnragedLevel1"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(776, 703)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D6" type="Sprite2D" parent="EnragedLevel1"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(468, 747)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D7" type="Sprite2D" parent="EnragedLevel1"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(448, 595)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="EnragedLevel2" type="Node2D" parent="."]
 position = Vector2(-92, -56)
@@ -178,45 +200,45 @@ scale = Vector2(1.1, 1.1)
 
 [node name="Sprite2D" type="Sprite2D" parent="EnragedLevel2"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(410, 305)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D2" type="Sprite2D" parent="EnragedLevel2"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(698, 245)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D3" type="Sprite2D" parent="EnragedLevel2"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(892, 463)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D4" type="Sprite2D" parent="EnragedLevel2"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(292, 491)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D5" type="Sprite2D" parent="EnragedLevel2"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(776, 703)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D6" type="Sprite2D" parent="EnragedLevel2"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(468, 747)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D7" type="Sprite2D" parent="EnragedLevel2"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(448, 595)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="EnragedLevel3" type="Node2D" parent="."]
 position = Vector2(-92, -56)
@@ -224,53 +246,55 @@ scale = Vector2(1.1, 1.1)
 
 [node name="Sprite2D" type="Sprite2D" parent="EnragedLevel3"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(199.091, 192.727)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D2" type="Sprite2D" parent="EnragedLevel3"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(938.182, 289.091)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D3" type="Sprite2D" parent="EnragedLevel3"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(502.727, 135.455)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D4" type="Sprite2D" parent="EnragedLevel3"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(270, 690.909)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D5" type="Sprite2D" parent="EnragedLevel3"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(936.364, 648.182)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D6" type="Sprite2D" parent="EnragedLevel3"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(199.091, 354.545)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="Sprite2D7" type="Sprite2D" parent="EnragedLevel3"]
 visible = false
-self_modulate = Color(1, 0, 1, 1)
 position = Vector2(644.545, 810)
-texture = ExtResource("1_5ohxh")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_jr81g")
 
 [node name="HappyParticles2D" parent="." instance=ExtResource("3_y3p8s")]
 unique_name_in_owner = true
 position = Vector2(569, 431)
+texture = ExtResource("2_6nq1o")
 
 [node name="GrrParticles2D" parent="." instance=ExtResource("3_y3p8s")]
 unique_name_in_owner = true
 position = Vector2(569, 431)
+texture = ExtResource("3_jr81g")
 
 [node name="ParticlesTimer" type="Timer" parent="."]
 unique_name_in_owner = true
