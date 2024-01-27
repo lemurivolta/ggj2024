@@ -1,12 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://damxljj8qvw7a"]
+[gd_scene load_steps=3 format=3 uid="uid://damxljj8qvw7a"]
 
 [ext_resource type="Script" path="res://components/mostro/parte_mostro/parte_mostro.gd" id="1_2p2d0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1c68"]
+size = Vector2(1095, 925)
 
 [node name="parte_mostro" type="Area2D"]
 script = ExtResource("1_2p2d0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-build_mode = 1
-polygon = PackedVector2Array(10, 488, 331, 477, 306, 242, 174, 99, 53, 210, 21, 352)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(542, 1451)
+shape = SubResource("RectangleShape2D_s1c68")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

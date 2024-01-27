@@ -10,7 +10,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func _input(event):
+func _on_input_event(viewport, event, shape_idx):
 	# Mouse in viewport coordinates.
 	if event is InputEventMouseButton:
 		print("Mouse Click/Unclick at: ", event.position)
@@ -18,5 +18,5 @@ func _input(event):
 		print("Mouse Motion at: ", event.position)
 
 	# Print the size of the viewport.
-	print("Viewport Resolution is: ", get_viewport().get_visible_rect().size)
+	# print("Viewport Resolution is: ", get_viewport().get_visible_rect().size)
 
