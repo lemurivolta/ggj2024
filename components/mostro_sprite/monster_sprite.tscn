@@ -1,24 +1,28 @@
-[gd_scene load_steps=10 format=3 uid="uid://bma5f5v54d0gs"]
+[gd_scene load_steps=14 format=3 uid="uid://bma5f5v54d0gs"]
 
 [ext_resource type="Script" path="res://components/mostro_sprite/monster_sprite.gd" id="1_j2tp6"]
 [ext_resource type="Texture2D" uid="uid://c76x8swdag62f" path="res://Assets/2D/teste/mostro bocca chiusa.png" id="2_0afpf"]
 [ext_resource type="Texture2D" uid="uid://bkhf7r4bijaph" path="res://Assets/2D/teste/TESTA 2 BOCCA CHIUSA.png" id="3_51f7o"]
 [ext_resource type="Texture2D" path="res://Assets/2D/tronchi/CORPO2.png" id="3_w8ck5"]
 [ext_resource type="Texture2D" uid="uid://88y8hl0fqdg" path="res://Assets/2D/gambe/MOSTRO GAMBE 2.png" id="4_llohd"]
+[ext_resource type="Texture2D" uid="uid://dlwcx5tp3wcpf" path="res://Assets/2D/teste/mostro 3 bocca chiUsa.png" id="4_sxvdg"]
 [ext_resource type="Texture2D" uid="uid://d0r3c2oflf1cu" path="res://Assets/2D/teste/TESTA Mostro 2 BOCCA APERTA.png" id="5_4tgg2"]
 [ext_resource type="Texture2D" path="res://Assets/2D/tronchi/mostro tronco.png" id="5_8p8p3"]
+[ext_resource type="Texture2D" uid="uid://4b53unfjo28e" path="res://Assets/2D/teste/mostro 3 bocca aperta.png" id="7_c4ww2"]
 [ext_resource type="Texture2D" uid="uid://bv8h8lytbghko" path="res://Assets/2D/gambe/mostro gambe.png" id="7_hrm8v"]
 [ext_resource type="Texture2D" uid="uid://ca6jfukwp7m1p" path="res://Assets/2D/teste/mostro bocca aperta.png" id="8_hv0u0"]
+[ext_resource type="Texture2D" uid="uid://dt67x2hf7rf5h" path="res://Assets/2D/tronchi/mostro torso3.png" id="10_ji4ra"]
+[ext_resource type="Texture2D" uid="uid://cbnh7oxghx3g3" path="res://Assets/2D/gambe/mostro gambe 3.png" id="13_3jgbj"]
 
 [node name="monster_sprite" type="Node2D"]
 script = ExtResource("1_j2tp6")
-sprites_head = Array[Texture]([ExtResource("2_0afpf"), ExtResource("3_51f7o")])
-sprites_head_open = Array[Texture]([ExtResource("8_hv0u0"), ExtResource("5_4tgg2")])
-sprites_body = Array[Texture]([ExtResource("5_8p8p3"), ExtResource("3_w8ck5")])
-sprites_legs = Array[Texture]([ExtResource("4_llohd"), ExtResource("7_hrm8v")])
-names_head = Array[String](["Asmo", "Uro"])
-names_body = Array[String](["za", "geri"])
-names_legs = Array[String](["el", "oth"])
+sprites_head = Array[Texture]([ExtResource("2_0afpf"), ExtResource("3_51f7o"), ExtResource("4_sxvdg")])
+sprites_head_open = Array[Texture]([ExtResource("8_hv0u0"), ExtResource("5_4tgg2"), ExtResource("7_c4ww2")])
+sprites_body = Array[Texture]([ExtResource("5_8p8p3"), ExtResource("3_w8ck5"), ExtResource("10_ji4ra")])
+sprites_legs = Array[Texture]([ExtResource("4_llohd"), ExtResource("7_hrm8v"), ExtResource("13_3jgbj")])
+names_head = Array[String](["Asmo", "Uro", "Yu"])
+names_body = Array[String](["za", "geri", "cht"])
+names_legs = Array[String](["el", "oth", "as"])
 
 [node name="head" type="Sprite2D" parent="."]
 position = Vector2(540, 960)
