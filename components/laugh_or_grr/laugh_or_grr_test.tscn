@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://carclp5jrxyvq"]
+
+[ext_resource type="PackedScene" uid="uid://b65s2f6rnfxt1" path="res://components/laugh_or_grr/laugh_or_grr.tscn" id="1_1mxdb"]
+[ext_resource type="Script" path="res://components/laugh_or_grr/laugh_or_grr_test.gd" id="1_kabi7"]
+
+[node name="LaughOrGrrTest" type="Node2D"]
+script = ExtResource("1_kabi7")
+
+[node name="LaughOrGrr" parent="." instance=ExtResource("1_1mxdb")]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 120.0
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "More pleasure"
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Less pleasure"
+
+[connection signal="pressed" from="Control/VBoxContainer/Button" to="." method="_on_button_more_pleasure_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button2" to="." method="_on_button_less_pleasure_pressed"]
