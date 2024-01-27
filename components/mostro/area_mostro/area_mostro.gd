@@ -1,6 +1,12 @@
 extends Node2D
 
-func set_num_parts(num: int):
+@export var sprites: Array[Sprite2D]
+@export var num_parts: int
+
+func _ready():
+	_set_num_parts(num_parts)
+
+func _set_num_parts(num: int):
 	if num == 2:
 		%DoppiaParte.visible = true
 	elif num == 3:
