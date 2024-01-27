@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c76x8swdag62f"
-path="res://.godot/imported/mostro bocca chiusa.png-9c27cb4b8c52e0f9250a85b9b432e11c.ctex"
+uid="uid://bkhf7r4bijaph"
+path="res://.godot/imported/TESTA 2 BOCCA CHIUSA.png-9facd71961c8a99ca6d03ac25dfceef2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/2D/mostro bocca chiusa.png"
-dest_files=["res://.godot/imported/mostro bocca chiusa.png-9c27cb4b8c52e0f9250a85b9b432e11c.ctex"]
+source_file="res://Assets/2D/teste/TESTA 2 BOCCA CHIUSA.png"
+dest_files=["res://.godot/imported/TESTA 2 BOCCA CHIUSA.png-9facd71961c8a99ca6d03ac25dfceef2.ctex"]
 
 [params]
 
