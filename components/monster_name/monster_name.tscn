@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://btedk0qe331x5"]
+
+[ext_resource type="Script" path="res://components/monster_name/monster_name.gd" id="1_5mlgk"]
+
+[sub_resource type="Theme" id="Theme_y1fel"]
+Label/colors/font_outline_color = Color(0.0196078, 0.0196078, 0.0196078, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0.545098)
+Label/constants/outline_size = 11
+Label/constants/shadow_offset_x = 6
+Label/constants/shadow_offset_y = 5
+Label/font_sizes/font_size = 120
+
+[node name="MonsterName" type="Node2D"]
+script = ExtResource("1_5mlgk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -407.5
+offset_top = -219.0
+offset_right = 572.5
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_y1fel")
+alignment = 1
+
+[node name="Part1" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "As"
+
+[node name="Spacer1" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Part2" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "mo"
+
+[node name="Spacer2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Part3" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "deus"

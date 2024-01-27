@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bod20twb1su2k"]
+
+[ext_resource type="Script" path="res://components/monster_name/monster_name_test.gd" id="1_3uapf"]
+[ext_resource type="PackedScene" uid="uid://btedk0qe331x5" path="res://components/monster_name/monster_name.tscn" id="1_h6pwl"]
+
+[node name="MonsterNameTest" type="Node2D"]
+script = ExtResource("1_3uapf")
+
+[node name="MonsterName" parent="." instance=ExtResource("1_h6pwl")]
+unique_name_in_owner = true
+position = Vector2(441, 1911)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "asmodeus"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "frankestein"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_asmodeus_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_frankenstein_pressed"]

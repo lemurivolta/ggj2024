@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3nojpv4x7v1p"]
+
+[ext_resource type="Texture2D" uid="uid://cnssbm8x5rjsb" path="res://icon.png" id="1_qm841"]
+
+[sub_resource type="Curve" id="Curve_kvruh"]
+_data = [Vector2(0.00338983, 1), 0.0, 0.0, 0, 0, Vector2(0.98983, 0.0129958), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_s6xxt"]
+texture_mode = 1
+curve = SubResource("Curve_kvruh")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mipt5"]
+lifetime_randomness = 0.1
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+spread = 180.0
+initial_velocity_min = 385.09
+initial_velocity_max = 385.09
+gravity = Vector3(0, 98, 0)
+alpha_curve = SubResource("CurveTexture_s6xxt")
+
+[node name="ReactionParticles2D" type="GPUParticles2D"]
+position = Vector2(554, 132)
+emitting = false
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_mipt5")
+texture = ExtResource("1_qm841")
+one_shot = true
+explosiveness = 1.0
+visibility_rect = Rect2(0, 0, 0, 0)
+local_coords = true
