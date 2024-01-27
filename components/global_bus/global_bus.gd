@@ -27,6 +27,9 @@ signal enraged
 # Signal raised when the monster is really happy and gets quiet
 signal happy
 
+# Signal raised when the monster name is chosen
+signal set_name(part1: String, part2: String, part3: String)
+
 ###############################################################################
 # FUNCTIONS
 ###############################################################################
