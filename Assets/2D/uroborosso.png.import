@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brvecuunsi5gd"
-path="res://.godot/imported/Ouroboros-Zanaq.svg.png-96ced65d4ae8807ead445480e8a88c49.ctex"
+uid="uid://dto3ulaho5ifv"
+path="res://.godot/imported/uroborosso.png-54591163476c81ed4aa733f94a9341f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/2D/gambe/Ouroboros-Zanaq.svg.png"
-dest_files=["res://.godot/imported/Ouroboros-Zanaq.svg.png-96ced65d4ae8807ead445480e8a88c49.ctex"]
+source_file="res://Assets/2D/uroborosso.png"
+dest_files=["res://.godot/imported/uroborosso.png-54591163476c81ed4aa733f94a9341f2.ctex"]
 
 [params]
 
