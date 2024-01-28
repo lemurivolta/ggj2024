@@ -11,6 +11,7 @@ func _ready():
 	prog_bar.max_value = timer.wait_time
 	prog_bar.value = 0
 	timer.start()
+	GlobalBus.happy.connect(_on_happy)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,3 +25,6 @@ func _process(delta):
 func _on_timer_timeout():
 	GlobalBus.enraged.emit()
 	prog_bar.value = 0
+
+func _on_happy():
+	queue_free()
