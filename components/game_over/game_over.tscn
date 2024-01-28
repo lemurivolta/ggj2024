@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgakwtvpvshxg"]
+
+[ext_resource type="Script" path="res://components/game_over/game_over.gd" id="1_07j27"]
+[ext_resource type="Texture2D" uid="uid://ufn125lu4yoq" path="res://Assets/2D/white-parchment-paper.jpg" id="2_x2ekv"]
+[ext_resource type="FontFile" uid="uid://dinsjgtnu5rjb" path="res://Assets/Fonts/Old_Englished_Boots.ttf" id="3_f3r6a"]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_07j27")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(540, 960)
+texture = ExtResource("2_x2ekv")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1080.0
+offset_bottom = 1920.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Spacer" type="Control" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Spacer4" type="Control" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.180392, 0.164706, 0.12549, 1)
+theme_override_fonts/font = ExtResource("3_f3r6a")
+theme_override_font_sizes/font_size = 180
+text = "Il mostro
+ha mangiato!"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HappyMonstersLabel" type="Label" parent="Control/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.180392, 0.164706, 0.12549, 1)
+theme_override_fonts/font = ExtResource("3_f3r6a")
+theme_override_font_sizes/font_size = 180
+text = "Hai reso felici
+{n} mostri"
+horizontal_alignment = 1
+
+[node name="Spacer2" type="Control" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Continua"
+
+[node name="Spacer3" type="Control" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spacer2" type="Control" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="Control/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

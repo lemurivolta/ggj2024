@@ -13,6 +13,9 @@ var enraged_threshold = -5
 # Level of pleasure over which the monster is really happy and gets quiet
 var happy_threshold = 2
 
+# Number of happy monsters since the beginning
+var num_happy_monsters = 0
+
 ###############################################################################
 # SIGNALS
 ###############################################################################
@@ -44,9 +47,10 @@ signal interaction(started: bool)
 var tickle_enabled = true
 
 # Reset the pleasure level to 0
-func reset_pleasure():
+func reset():
 	current_pleasure = 0
-	
+	num_happy_monsters = 0
+
 ###############################################################################
 # INTERNALS
 ###############################################################################
@@ -64,4 +68,5 @@ func _on_tickle(value: float):
 		enraged.emit()
 	elif current_pleasure >= happy_threshold:
 		current_pleasure = 0
+		num_happy_monsters += 1
 		happy.emit()
