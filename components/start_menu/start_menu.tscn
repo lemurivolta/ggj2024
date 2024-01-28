@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://p782y1fr3q88"]
+[gd_scene load_steps=3 format=3 uid="uid://p782y1fr3q88"]
 
 [ext_resource type="Script" path="res://components/start_menu/start_menu.gd" id="1_71l1n"]
-[ext_resource type="Texture2D" uid="uid://ufn125lu4yoq" path="res://Assets/2D/white-parchment-paper.jpg" id="1_kv0of"]
-[ext_resource type="FontFile" uid="uid://dinsjgtnu5rjb" path="res://Assets/Fonts/Old_Englished_Boots.ttf" id="2_gie82"]
+[ext_resource type="Texture2D" uid="uid://yia730xoa5xd" path="res://Assets/2D/Necrocomicon_20240128_101546_0000.png" id="2_78274"]
 
 [node name="Menu" type="Control"]
 custom_minimum_size = Vector2(1080, 1920)
@@ -19,7 +18,7 @@ layout_mode = 0
 offset_left = -100.0
 offset_right = 1180.0
 offset_bottom = 1920.0
-texture = ExtResource("1_kv0of")
+texture = ExtResource("2_78274")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -32,33 +31,7 @@ grow_vertical = 2
 [node name="Spacer" type="Control" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_gie82")
-theme_override_font_sizes/font_size = 240
-text = "Necro"
-horizontal_alignment = 1
-
-[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 16
-theme_override_fonts/font = ExtResource("2_gie82")
-theme_override_font_sizes/font_size = 240
-text = "comicon"
-horizontal_alignment = 1
-
-[node name="Spacer2" type="Control" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.5
+size_flags_stretch_ratio = 5.0
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
