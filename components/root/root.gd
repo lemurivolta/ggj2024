@@ -35,3 +35,4 @@ func _on_finish():
 	scale_tweener.set_trans(Tween.TRANS_CUBIC)
 	scale_tweener.set_ease(Tween.EASE_OUT)
 	tween.tween_callback(gameover.queue_free)
+	GlobalBus.reset()

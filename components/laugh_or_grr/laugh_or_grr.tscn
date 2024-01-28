@@ -295,9 +295,3 @@ texture = ExtResource("2_6nq1o")
 unique_name_in_owner = true
 position = Vector2(569, 431)
 texture = ExtResource("3_jr81g")
-
-[node name="ParticlesTimer" type="Timer" parent="."]
-unique_name_in_owner = true
-one_shot = true
-
-[connection signal="timeout" from="ParticlesTimer" to="." method="_on_particles_timer_timeout"]

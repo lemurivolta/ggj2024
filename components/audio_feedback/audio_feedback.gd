@@ -11,6 +11,7 @@ func _ready():
 	GlobalBus.set_head.connect(on_head_setted)
 	
 func _on_feedback(positive: bool):
+	print(Time.get_date_string_from_system(), "playing!", positive)
 	if positive:
 		laughter_players[head_index].play()
 	else:

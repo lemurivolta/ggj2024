@@ -4,7 +4,6 @@ extends Node2D
 @export var sprites_enraged: Array[Sprite2D]
 @export var random_rotation_radians: float = PI / 6
 
-@onready var particles_timer: Timer = %ParticlesTimer
 @onready var happy_particles: GPUParticles2D = %HappyParticles2D
 @onready var enraged_particles: GPUParticles2D = %GrrParticles2D
 
@@ -12,13 +11,24 @@ extends Node2D
 func _ready():
 	GlobalBus.tickle.connect(_on_tickle)
 	GlobalBus.feedback.connect(_on_feedback)
+	GlobalBus.happy.connect(_reset_pleasure_lever)
+	GlobalBus.enraged.connect(_reset_pleasure_lever)
 
-func _on_tickle(_pleasure):
+var _last_pleasure_level = 0
+var is_happier = false
+var is_sadder = false
+func _reset_pleasure_lever():
+	_last_pleasure_level = 0
+	is_happier = false
+	is_sadder = false
+
+func _on_tickle(pleasure):
+	is_happier = pleasure > _last_pleasure_level
+	is_sadder = pleasure < _last_pleasure_level
+	_last_pleasure_level = pleasure
 	_update_sprites(GlobalBus.happy_threshold, 0, GlobalBus.happy_threshold, sprites_happy)
 	_update_sprites(GlobalBus.enraged_threshold, GlobalBus.enraged_threshold, 0, sprites_enraged)
-	#if particles_timer.is_stopped():
 	_on_particles_timer_timeout()
-		#particles_timer.start()
 
 func _update_sprites(threshold: float, min_value: float, max_value: float, sprites: Array[Sprite2D]):
 	var level = clamp(GlobalBus.current_pleasure, min_value, max_value)
@@ -30,9 +40,12 @@ func _update_sprites(threshold: float, min_value: float, max_value: float, sprit
 
 
 func _on_particles_timer_timeout():
-	if GlobalBus.current_pleasure > 0 && not happy_particles.emitting:
+	print("particles timer")
+	if is_happier && not happy_particles.emitting:
+		print("happier")
 		GlobalBus.feedback.emit(true)
-	if GlobalBus.current_pleasure < 0 && not enraged_particles.emitting:
+	if is_sadder && not enraged_particles.emitting:
+		print("sadder")
 		GlobalBus.feedback.emit(false)
 
 

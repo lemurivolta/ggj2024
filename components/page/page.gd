@@ -3,6 +3,7 @@ extends Node2D
 @export var flip_duration: float
 
 func flip_away():
+	print("disable tickling")
 	GlobalBus.tickle_enabled = false
 	var tween: Tween = get_tree().create_tween()
 	var scale_tweener: PropertyTweener = \
@@ -12,4 +13,5 @@ func flip_away():
 	tween.tween_callback(self._re_enable_tickle)
 	
 func _re_enable_tickle():
+	print("re-enable tickling")
 	GlobalBus.tickle_enabled = true

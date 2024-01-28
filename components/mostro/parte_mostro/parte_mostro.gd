@@ -50,8 +50,9 @@ func _on_input_event(_viewport, event, _shape_idx):
 
 		#print(str(mouse_vel) + " | " + str(mouse_threshold))
 
-		if mouse_vel >= mouse_threshold:
-			print("AHAHA " + str(pleasurometer))#+ str(rnd.randf_range(-10.0, 10.0)))
+		#if mouse_vel >= mouse_threshold:
+			#print("AHAHA " + str(pleasurometer))#+ str(rnd.randf_range(-10.0, 10.0)))
 		
-		GlobalBus.tickle.emit(pleasure * my_delta)
+		if GlobalBus.tickle_enabled:
+			GlobalBus.tickle.emit(pleasure * my_delta)
 		pleasurometer += abs(pleasure) * my_delta
