@@ -34,6 +34,7 @@ func _ready():
 	
 	GlobalBus.set_name.emit(names_head[rnd_head], names_body[rnd_body], names_legs[rnd_legs])
 	GlobalBus.interaction.connect(set_head_sprite)
+	GlobalBus.set_head.emit(rnd_head)
 	
 	
 func set_head_sprite(isOpen:bool):

@@ -40,6 +40,8 @@ signal set_name(part1: String, part2: String, part3: String)
 # of it (started = false)
 signal interaction(started: bool)
 
+signal set_head(index:int)
+
 ###############################################################################
 # FUNCTIONS
 ###############################################################################
