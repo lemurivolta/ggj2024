@@ -34,9 +34,9 @@ texture = ExtResource("2_aet7x")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_top = 1556.0
+offset_top = 1408.0
 offset_right = 1080.0
-offset_bottom = 1920.0
+offset_bottom = 1923.0
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 1
@@ -50,7 +50,7 @@ text = "Usa mouse o touch per interagire con i demoni.
 
 Alcune parti del corpo gli fanno il solletico, altre gli danno fastidio. Scopri quali!
 
-Fallo sbellicare entro il timer ed eviterai l'apocalisse, poi passi subito al demone successivo."
+Fallo sbellicare entro il timer ed eviterai l'apocalisse, poi passa subito al demone successivo."
 autowrap_mode = 2
 
 [node name="BackButton" type="Button" parent="."]
