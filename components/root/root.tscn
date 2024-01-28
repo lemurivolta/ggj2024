@@ -1,14 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://yqcyne57b4p7"]
+[gd_scene load_steps=6 format=3 uid="uid://yqcyne57b4p7"]
 
 [ext_resource type="PackedScene" uid="uid://p782y1fr3q88" path="res://components/start_menu/start_menu.tscn" id="1_ern0u"]
 [ext_resource type="Script" path="res://components/root/root.gd" id="1_hdy8v"]
 [ext_resource type="PackedScene" uid="uid://ukxpe0jhtey7" path="res://components/main/main.tscn" id="2_jj66p"]
 [ext_resource type="PackedScene" uid="uid://bgakwtvpvshxg" path="res://components/game_over/game_over.tscn" id="3_cwyae"]
+[ext_resource type="PackedScene" uid="uid://bq77ku7cdq6sd" path="res://components/istruzioni/istruzioni.tscn" id="4_kcsb0"]
 
 [node name="Root" type="Node2D" node_paths=PackedStringArray("menu")]
 script = ExtResource("1_hdy8v")
 main_scene = ExtResource("2_jj66p")
 gameover_scene = ExtResource("3_cwyae")
+instruction_scene = ExtResource("4_kcsb0")
 menu = NodePath("StartMenu")
 
 [node name="StartMenu" parent="." instance=ExtResource("1_ern0u")]
@@ -16,4 +18,5 @@ z_index = 1
 offset_right = 1080.0
 offset_bottom = 1920.0
 
+[connection signal="instruction" from="StartMenu" to="." method="_on_start_menu_instruction"]
 [connection signal="start_game" from="StartMenu" to="." method="_on_menu_start_game"]
