@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cx3uygqus5c46"]
 
 [ext_resource type="Script" path="res://components/page/page.gd" id="1_os61p"]
-[ext_resource type="Texture2D" uid="uid://ufn125lu4yoq" path="res://Assets/Fonts/white-parchment-paper.jpg" id="2_7dn8b"]
+[ext_resource type="Texture2D" uid="uid://ufn125lu4yoq" path="res://Assets/2D/white-parchment-paper.jpg" id="2_7dn8b"]
 [ext_resource type="PackedScene" uid="uid://btedk0qe331x5" path="res://components/monster_name/monster_name.tscn" id="3_gjhsc"]
 
 [node name="Page" type="Node2D"]
