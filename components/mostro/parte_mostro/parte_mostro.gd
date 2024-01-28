@@ -37,7 +37,7 @@ func _physics_process(delta):
 		GlobalBus.interaction.emit(false)
 
 
-func _on_input_event(viewport, event, shape_idx):
+func _on_input_event(_viewport, event, _shape_idx):
 	
 	if pleasure > 1 && pleasurometer >= max_pleasure:
 		return
