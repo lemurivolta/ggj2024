@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://pf8qi1bpc1j4"]
+
+[ext_resource type="Script" path="res://components/timer/Timer.gd" id="1_jn7uw"]
+[ext_resource type="Texture2D" uid="uid://c8grcfbvxb2fm" path="res://Assets/2D/uroboro.png" id="2_pwxld"]
+
+[node name="Timer" type="Node"]
+script = ExtResource("1_jn7uw")
+time = 10.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+max_value = 10.0
+fill_mode = 4
+texture_progress = ExtResource("2_pwxld")
+radial_initial_angle = 4.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
